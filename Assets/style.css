@@ -24,15 +24,6 @@ header {
   overflow: hidden;
 }
 
-h1 {
-  font-size: 200%;
-}
-
-h2 {
-  margin: 2% 0;
-  font-size: 250%;
-}
-
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -72,6 +63,10 @@ article ul {
   list-style: circle;
 }
 
+main {
+  flex-direction: column;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -83,6 +78,10 @@ footer {
 .container {
   display: flex;
   position: relative;
+  border-width: 1px;
+  padding: 20px;
+  margin: 5px;
+
 }
 
 .text-block {
@@ -96,9 +95,12 @@ footer {
 }
 
 .flex-container {
+  flex: 4;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
