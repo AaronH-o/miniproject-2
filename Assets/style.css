@@ -57,40 +57,10 @@ nav a:hover {
 
 main {
   display: flex;
+  flex-direction: column;
   flex: 1 1 0;
   max-width: 96%;
   margin: 2% auto;
-}
-
-article {
-  border-bottom: 1px solid #13293d;
-}
-
-article p {
-  margin: 2% 0;
-  font-size: 110%;
-}
-
-article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
-}
-
-main {
-  flex-direction: column;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: #13293d;
-  color: #fff;
-}
-
-.square {
-  min-height: 1000px;
 }
 
 .flex-container {
@@ -131,6 +101,15 @@ footer {
   border: 5px solid white;
 }
 
+.flex-container-contact {
+  display: flex;
+  gap: 1rem;
+  list-style-image: initial;
+  list-style: none;
+  justify-content: space-evenly;
+
+}
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -156,9 +135,6 @@ footer {
     align-items: center;
   }
 
-  main {
-    max-width: 1200px;
-  }
 
   .flex-container {
     flex-direction: column;
